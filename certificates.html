@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="certificates.css" />
+    <title>My Certificates</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>My Certificates</h1>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img
+          src="./certificates/certificate-1_page.jpg"
+          onclick="openModal('./certificates/certificate-1_page.jpg')"
+          alt="Image 1"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="./certificates/Certificate-2_page.jpg"
+          onclick="openModal('./certificates/certificate-2_page.jpg')"
+          alt="Image 1"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="./certificates/certificat-3.png"
+          onclick="openModal('./certificates/certificat-3.png')"
+          alt="Image 1"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="./certificates/certificate-4.jpg"
+          onclick="openModal('./certificates/certificate-4')"
+          alt="Image 1"
+        />
+      </div>
+      
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
